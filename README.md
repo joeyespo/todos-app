@@ -5,6 +5,9 @@ Example mobile TODO app.
 
 See the [API repo](https://github.com/joeyespo/todos-api) for the server component of this app.
 
+<p align="center">
+  <img src="assets/screenshot.png" width="200" height="356" alt="Screenshot" />
+</p>
 
 Setup
 -----
