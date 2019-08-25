@@ -1,19 +1,15 @@
+/* global process */
+
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import TodoApp from './components/TodoApp';
+
+// Override these defaults in your local .env
+const API_URL = process.env.API_URL || 'https://joeyespo-todos.herokuapp.com';
+const STORAGE_KEY = process.env.STORAGE_KEY || 'TODOS';
 
 export default function App() {
+  console.debug('API_URL =', API_URL)
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <TodoApp storageKey={STORAGE_KEY} apiUrl={API_URL} />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

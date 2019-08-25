@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react-native"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2
+  }
+}
